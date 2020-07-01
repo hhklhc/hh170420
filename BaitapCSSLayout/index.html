@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaitapCss-LLayout</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrap {
+            margin: auto;
+            padding: 0;
+
+        }
+
+        .content {
+            margin: auto;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+
+
+        .pic1 {
+            width: 60%;
+            height: 400px;
+            background-color: red;
+            float: left;
+        }
+
+        .borderP1 {
+            border-right: 7.5px solid white;
+        }
+
+        .borderP2 {
+            border-left: 7.5px solid white;
+        }
+
+        .pic2 {
+            width: 40%;
+            height: 400px;
+            float: left;
+        }
+
+        .pic2-1 {
+            width: 100%;
+            height: 50%;
+            background-color: blue;
+        }
+
+        .pic2-2 {
+            width: 100%;
+            height: 50%;
+            background-color: green;
+        }
+
+        p {
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            margin: auto;
+            padding-top: 190px;
+        }
+
+        .pic2-1>p {
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            margin: auto;
+            padding-top: 90px;
+        }
+
+        .pic2-2>p {
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            margin: auto;
+            padding-top: 90px;
+        }
+
+        .box {
+            border: solid white;
+            width: 100%;
+            float: left;
+        }
+
+        .border4 {
+            border-right: 10px solid white;
+            width: 33.333333%;
+        }
+
+        .border5 {
+            border-right: 5px solid white;
+            border-left: 5px solid white;
+            width: 33.333333%;
+        }
+
+        .border6 {
+            border-left: 10px solid white;
+            width: 33.333333%;
+        }
+
+        .pic4 {
+            width: 33.333333%;
+            height: 400px;
+            background-color: red;
+            float: left;
+        }
+
+        .pic5 {
+            width: 33.333333%;
+            height: 400px;
+            background-color: green;
+            float: left;
+        }
+
+        .pic6 {
+            width: 33.333333%;
+            height: 400px;
+            background-color: blue;
+            float: left;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="wrap">
+
+        <div class="content">
+
+            <div class="task1">
+                <h1>Bài tập 1</h1>
+                <div class="pic1">
+                    <p>Height: 400px</p>
+                </div>
+                <div class="pic2">
+                    <div class="pic2-1">
+                        <p>Height: 200px</p>
+                    </div>
+                    <div class="pic2-2">
+                        <p>Height: 200px</p>
+                    </div>
+                </div>
+
+                <h1>Bài tập 2</h1>
+                <div class="box">
+                    <div class="borderP1 pic1">
+                        <p>Height: 400px</p>
+                    </div>
+                    <div class="borderP2 pic2">
+                        <div class="pic2-1 p">
+                            <p>Height: 200px</p>
+                        </div>
+                        <div class="pic2-2 p">
+                            <p>Height: 200px</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h1> Bài tập 3</h1>
+                <div class="box">
+                    <div class="pic4">
+                        <p>Height: 400px</p>
+                    </div>
+
+                    <div class="pic5">
+                        <p>Height: 400px</p>
+                    </div>
+                    <div class="pic6">
+                        <p>Height: 400px</p>
+                    </div>
+
+                </div>
+
+                <h1> Bài tập 4</h1>
+                <div class="box">
+                    <div class="border4 pic4">
+                        <p>Height: 400px</p>
+                    </div>
+
+                    <div class="border5 pic5">
+                        <p>Height: 400px</p>
+                    </div>
+                    <div class="border6 pic6">
+                        <p>Height: 400px</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
