@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu .banner img {
+    width: 200px;
+}
+
+.danhsachmenu {
+    display: flex;
+    flex-direction: row;
+    padding-top: 7px;
+}
+
+ul.danhsachmenu {
+    list-style-type: none;
+}
+
+ul.danhsachmenu li a {
+    text-decoration: none;
+}
+
+.testanh {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.testanh img {
+    width: calc(100% / 8 - 15px);
+}
