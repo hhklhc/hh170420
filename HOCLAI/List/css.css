@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+.no-float {
+    clear: both;
+}
+
+#anhbanner img {
+    width: 100%;
+}
+
+.menu {
+    text-align: center;
+    color: brown;
+    width: calc(100vw - 100px);
+    margin-top: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ordered {
+    padding-left: 35px;
+}
+
+.thucdon {
+    position: relative;
+}
+
+.thucdon ul {
+    list-style-type: none;
+}
+
+.thucdon ul li ul {
+    position: absolute;
+    list-style-type: none;
+    display: none;
+}
+
+.thucdon ul li:hover ul {
+    display: block;
+    color: #f0be1b;
+}
+
+.yeuthich a {
+    text-decoration: none;
+}
+
+.thucdon ul li ul li {
+    margin-top: 15px;
+}
+
+@keyframes thucdon {}
+
+@keyframes sale {
+    0% {
+        color: brown;
+        transform: scale(1, 1);
+    }
+    50% {
+        color: #cda7f1;
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        color: #c745ee;
+        transform: scale(1.4, 1.4);
+    }
+}
+
+div.sale {
+    animation-name: sale;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}

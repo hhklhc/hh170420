@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.no-float {
+    clear: both;
+}
+
+.box {
+    padding: 05px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    margin-right: 5px;
+    border-width: 2px;
+    border-style: double;
+    float: left;
+    width: 32%;
+}
+
+.info {
+    border-color: #ec32e3;
+}
+
+.contact {
+    border-color: #11e772;
+}
+
+.company {
+    border-color: #fdb890;
+}
+
+.contact span {
+    color: #11e772;
+}
+
+.info span {
+    color: #ec32e3;
+}
+
+.company span {
+    color: #fdb890;
+}
+
+.wrap {
+    max-width: 1000px;
+    margin: auto;
+}

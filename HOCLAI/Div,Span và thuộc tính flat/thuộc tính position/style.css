@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+.no-float {
+    clear: both;
+}
+
+.menu {
+    position: absolute;
+    width: 200px;
+    height: 100vmax;
+    background-color: #77d6ff91;
+    float: left;
+    left: 0px;
+}
+
+div.noidung {
+    position: absolute;
+    float: left;
+    right: 70px;
+    left: 200px;
+}
+
+.wrap {
+    position: relative;
+}
+
+#banner img {
+    max-width: 100%;
+}
+
+.chim img {
+    opacity: 1;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+}
+
+.trolai {
+    position: fixed;
+    bottom: 20px;
+    right: 0px;
+}
+
+.chim:hover img {
+    opacity: 0.9;
+    transform: translate(100px, 0px);
+    box-shadow: -10px 0px 30px 20px grey;
+}
+
+.hoahongxanh img {
+    transition-timing-function: ease-in-out;
+    transition: 2.5s transform 0.8s;
+}
+
+.hoahongxanh:hover img {
+    box-shadow: 15px 0px 25px;
+    transform: rotate(360deg);
+}

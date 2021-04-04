@@ -1,0 +1,31 @@
+:root {
+    --red: rgb(113, 214, 30);
+    --line-height: 1.5;
+}
+
+h1 {
+    color: var(--red);
+    transform: rotateX(0);
+    background-color: aquamarine;
+    backface-visibility: visible;
+    transition: all 0.5s 1s;
+}
+
+h1:hover {
+    transform: rotateX(360deg);
+}
+
+p {
+    color: var(--red);
+}
+
+body {
+    background-image: linear-gradient(
+        to right bottom,
+        red 0% 10%,
+        blue 10% 20%,
+        green 20% 30%,
+        cyan 30% 100%
+    );
+    min-height: 100vh;
+}

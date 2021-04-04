@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+.no-float {
+    clear: both;
+}
+
+div.tieude {
+    text-align: center;
+    background-color: chartreuse;
+    animation-name: tieude;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes tieude {
+    0% {
+        background-color: chartreuse;
+    }
+    40% {
+        background-color: darkcyan
+    }
+    80% {
+        background-color: darkgrey;
+    }
+}
+
+img {
+    max-width: 450px;
+}
+
+.anhchim {
+    float: left;
+}
+
+p {
+    text-align: center;
+}
+
+.chim {
+    overflow: auto;
+}
+
+@keyframes tacgia {
+    0% {
+        opacity: 0%;
+        tranform: translate(0px.0);
+    }
+    3% {
+        opacity: 30%;
+        transform: translate(0px, 0px);
+    }
+    5% {
+        opacity: 50%;
+        tranform: translate(0px.0);
+    }
+    7% {
+        opacity: 70%;
+        transform: translate(0px, 0px);
+    }
+    10% {
+        opacity: 100%;
+        transform: translate(0px, 0);
+    }
+    15% {
+        opacity: 100%;
+        transform: translate(-20px, 0);
+    }
+    20% {
+        opacity: 100%;
+        transform: translate(-40px, 0);
+    }
+    25% {
+        opacity: 90%;
+        transform: translate(-60px, 0);
+    }
+    30% {
+        opacity: 85%;
+        transform: translate(-80px, 0);
+    }
+    35% {
+        opacity: 80%;
+        transform: translate(-100px, 0);
+    }
+    40% {
+        opacity: 75%;
+        transform: translate(-120px, 0);
+    }
+    45% {
+        opacity: 70%;
+        transform: translate(-140px, 0);
+    }
+    50% {
+        opacity: 65%;
+        transform: translate(-160px, 0);
+    }
+    55% {
+        opacity: 60%;
+        transform: translate(-180px, 0);
+    }
+    60% {
+        opacity: 55%;
+        transform: translate(-200px, 0);
+    }
+    65% {
+        opacity: 50%;
+        transform: translate(-220px, 0);
+    }
+    70% {
+        opacity: 45%;
+        transform: translate(-240px, 0)
+    }
+    75% {
+        opacity: 40%;
+        transform: translate(-260px, 0);
+    }
+    80% {
+        opacity: 35%;
+        transform: translate(-280px, 0);
+    }
+    85% {
+        opacity: 30%;
+        transform: translate(-300px, 0);
+    }
+    90% {
+        opacity: 25%;
+        transform: translate(-320px, 0);
+    }
+    95% {
+        opacity: 20%;
+        transform: translate(-340px, 0);
+    }
+    100% {
+        opacity: 0%;
+        transform: translate(-360px, 0);
+    }
+}
+
+div.tacgia {
+    float: right;
+    animation-name: tacgia;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+    animation-delay: 1.5ss;
+    animation-fill-mode: backwards;
+}
+
+.baitapanimation {
+    width: 1350px;
+    margin: auto;
+}
