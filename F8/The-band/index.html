@@ -8,12 +8,12 @@
     <title>CamAnh-The--Band</title>
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="../fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <!-- <script src="js.js"></script> -->
 </head>
 
 <body>
     <div class="main">
         <div class="header">
-
             <ul class="header-nav">
                 <li class="header-nav-home"><a href="#">Home</a></li>
                 <li class="header-nav-band"><a href="#">Band</a></li>
@@ -34,13 +34,13 @@
             </div>
         </div>
         <div class="slider">
-
             <div class="slider-text">
                 <h1>Los Angeles</h1>
                 <p>We had the best time playing at Venice Beach! </p>
             </div>
         </div>
         <div class="content">
+            <!-- The band -->
             <div class="content-section1">
                 <h2 class="content-section1-the--band">THE BAND</h2>
                 <p class="content-section1-the--band-sub">We love music</p>
@@ -72,14 +72,160 @@
                     <div class="clear"></div>
                 </div>
             </div>
+            <!-- Tour dates -->
             <div class="content-section2">
-               
-           
+                <h2 class="content-section2-tourdate">tour dates</h2>
+                <p class="content-section2-tourdate-sub">Remember to book your tickets!</p>
+                <ul class="content-section2-ticket">
+                    <li class="september">September<span>Sold out</span>
+                    </li>
+                    <li class="october">October<span>Sold out</span></li>
+                    <li class="november">November<span>3</span></span>
+                        <div class="clear"></div>
+                    </li>
+                </ul>
+                <div class="content-section2-show">
+                    <div class="content-section2-show-items">
+                        <div class="content-section2-show-newyork">
+                            <img src="../img/newyork.jpg" alt="Show at New York">
+                            <div class="content-section2-show-newyork-details">
+                                <h3 class="content-section2-show-detail-newyork">New York</h3>
+                                <p class="content-section2-show-newyork-details-datetime">Fri 27 Nov 2016</p>
+                                <p class="content-section2-show-newyork-details-des">
+                                    Praesent tincidunt sed
+                                    tellus ut
+                                    rutrum sed vitae justo
+                                </p>
+                                <button
+                                    class="content-section2-show-newyork-details-buybtn js-content-section2-show-details-buybtn">Buy
+                                    Tickets</button>
+                            </div>
+                        </div>
+                        <div class="content-section2-show-paris">
+                            <img src="../img/paris.jpg" alt="Show at Paris">
+                            <div class="content-section2-show-paris-details">
+                                <h3 class="content-section2-show-detail-paris">Paris</h3>
+                                <p class="content-section2-show-paris-details-datetime">Fri 28 Nov 2016</p>
+                                <p class="content-section2-show-paris-details-des">
+                                    Praesent tincidunt sed
+                                    tellus ut
+                                    rutrum sed vitae justo
+                                </p>
+                                <button
+                                    class="content-section2-show-paris-details-buybtn js-content-section2-show-details-buybtn">Buy
+                                    Tickets</button>
+                            </div>
+                        </div>
+                        <div class="content-section2-show-sanfrancisco">
+                            <img src="../img/sanfran.jpg" alt="Show at San Francisco">
+                            <div class="content-section2-show-sanfrancisco-details">
+                                <h3 class="content-section2-show-detail-sanfrancisco">San Francisco</h3>
+                                <p class="content-section2-show-sanfrancisco-details-datetime">Fri 29 Nov 2016</p>
+                                <p class="content-section2-show-sanfrancisco-details-des">
+                                    Praesent tincidunt sed
+                                    tellus ut
+                                    rutrum sed vitae justo
+                                </p>
+                                <button
+                                    class="content-section2-show-sanfrancisco-details-buybtn js-content-section2-show-details-buybtn">Buy
+                                    Tickets</button>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
             </div>
+            <!-- buy overlay -->
+            <div class="buy--overlay">
+                <div class="buy--overlay-main js-buy--overlay-main">
+                    <div class="buy--overlay-main-header">
+                        <p class="buy--overlay-main-header-close js-buy--overlay-main-header-close">
+                            <i class="buy--overlay-main-header-close-icon fas fa-times"></i>
+                        </p>
+                        <h2 class="buy--overlay-main-header-ticket">
+                            <i class="buy--overlay-main-header-ticket-icon fas fa-suitcase"></i>Tickets
+                        </h2>
+                    </div>
+                    <div class="buy--overlay-main-content">
+                        <form>
+                            <label for="howmany">
+                                <i class="buy--overlay-main-content-icon--ticket fas fa-shopping-cart"></i>Ticket,
+                                &#36;15 per person
+                            </label>
+                            <input type="number" id="howmany" name="howmany" placeholder="How many?">
+                            <label for="enter-email">
+                                <i class="buy--overlay-main-content-icon--sendto fas fa-user"></i>
+                                Send To
+                            </label>
+                            <input type="email" id="enter-email" name="enter-email" placeholder="Enter mail">
+                        </form>
+                        <button class="buy--overlay-main-content-pay">
+                            PAY
+                            <i class="buy--overlay-main-content-pay-icon fas fa-check"></i>
+                        </button>
+                    </div>
+                    <div class="buy--overlay-main-footer">
+                        <p>Need <a href="#">help?</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- contact -->
+            <div class="content-section3">
+                <h2 class="content-section3-contact">CONTACT</h2>
+                <p class="content-section3-contact-sub">Fan? Drop a note!</p>
+                <div class="content-section3-main">
+                    <div class="content-section3-main-details">
+                        <p><i class="fas fa-map-marker-alt"></i>Chicago, US</p>
+                        <p><i class="fas fa-phone"></i>Phone: +00151515</p>
+                        <p><i class="fas fa-envelope"></i>Email: mail@gmail.com</p>
+                    </div>
+                    <div class="content-section3-main-form">
+                        <form action="">
+                            <input type="text" id="content-section3-form-name" name="content-section3-form-name"
+                                placeholder="Name" required>
+                            <input type="email" id="content-section3-form-email" name="content-section3-form-email"
+                                placeholder="Email" required>
+                            <input type="text" id="content-section3-form-message" name="content-section3-form-message"
+                                placeholder="Message" required>
+                            <input type="submit" value="SEND" required>
+                            <div class="clear"></div>
+                        </form>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        <!-- map -->
+        <div class="content-map"></div>
         </div>
+        <!-- footer -->
         <div class="footer"></div>
-
     </div>
+    <script>
+        const buyTickets = document.querySelectorAll(".js-content-section2-show-details-buybtn");
+        const buyOverLay = document.querySelector(".buy--overlay");
+        const buyOverlayMainHeaderClose = document.querySelector(".js-buy--overlay-main-header-close")
+        const buyOverLayMain = document.querySelector(".js-buy--overlay-main");
+        function showBuyTicket() {
+            buyOverLay.classList.add("open");
+        }
+
+
+        function hideBuyOverlay() {
+            buyOverLay.classList.remove("open")
+        }
+
+
+        buyOverlayMainHeaderClose.addEventListener("click", hideBuyOverlay);
+        buyOverLay.addEventListener("click", hideBuyOverlay);
+
+        for (const buyTicket of buyTickets) {
+            buyTicket.addEventListener('click', showBuyTicket);
+        }
+        buyOverLayMain.addEventListener("click", function (event) {
+            event.stopPropagation()
+        })
+
+    </script>
 </body>
 
 </html>
