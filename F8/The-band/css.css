@@ -9,7 +9,9 @@ html{
 body {
     font-size: 15px;
 }
-
+.main{
+    overflow: hidden;
+}
 .header {
     height: 46px;
     background-color: #000;
