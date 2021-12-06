@@ -1,0 +1,38 @@
+@media only screen and (max-width: 700px) {
+
+    .header {
+    overflow: hidden;
+    }
+
+    .header-nav {
+        display: block;
+        
+    }
+
+    .header-nav>li>a {
+        display: block;
+    }
+
+    .header-nav>li {
+        display: block;
+
+    }
+
+    .header-search {
+        display: none;
+    }
+
+    .header-nav-icon-menu-responsive-700-icon {
+        display: inline-block;
+    }
+
+    .header-search-responsive {
+        position: absolute;
+        right: 0px;
+        visibility: visible;
+        line-height: 46px;
+        color: #fff;
+        padding: 0px 24px;
+        transition: 0.15s ease-out;
+    }
+}

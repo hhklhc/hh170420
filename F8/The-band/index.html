@@ -5,27 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CamAnh-The--Band</title>
+    <title>CamAnh-The-Band</title>
     <link rel="shortcut icon" href="/F8/img/z2691932581663_974bdbb527704510893e05df2eb89f56.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="../fonts/fontawesome-free-5.15.4-web/css/all.min.css">
-    <!-- <script src="js.js"></script> -->
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
     <div class="main">
-        <div class="header">
-            <ul class="header-nav">
-                <li class="header-nav-home"><a href="#">Home</a></li>
-                <li class="header-nav-band"><a href="#band">Band</a></li>
-                <li class="header-nav-tour"><a href="#tour">Tour</a></li>
-                <li class="header-nav-contact"><a href="#contact">Contact</a></li>
-                <li class="header-nav-more">
-                    <a href="#">More<i class="fas fa-caret-down"></i></a>
+        <div id="header" class="header">
+            <ul id="header-nav" class="header-nav">
+                <li class="header-nav-icon-menu-responsive-700">
+                    <i id="header-nav-icon-menu-responsive-700-icon"
+                        class="header-nav-icon-menu-responsive-700-icon fas fa-ellipsis-v"></i>
+                    <i class="header-search-responsive fas fa-search"></i>
+                </li>
+                <li class="header-nav-home js-open-menu-responsive"><a href="#">Home</a></li>
+                <li class="header-nav-band js-open-menu-responsive"><a href="#band">Band</a></li>
+                <li class="header-nav-tour js-open-menu-responsive"><a href="#tour">Tour</a></li>
+                <li class="header-nav-contact js-open-menu-responsive"><a href="#contact">Contact</a></li>
+                <li class="header-nav-more js-open-menu-responsive">
+                    <a href="#more">More<i class="fas fa-caret-down"></i></a>
                     <ul class="header-nav-more-submore">
-                        <li><a href="#">Merchandise</a></li>
-                        <li><a href="#">Extras</a></li>
-                        <li><a href="#">Media</a></li>
+                        <li><a href="#merchandise">Merchandise</a></li>
+                        <li><a href="#extras">Extras</a></li>
+                        <li><a href="#media">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -234,6 +239,35 @@
             event.stopPropagation()
         })
 
+    </script>
+    <script>
+        var headerResponsive = document.getElementById('header');
+        var menuResponsiveIcon = document.getElementById('header-nav-icon-menu-responsive-700-icon');
+        var headerHeight = header.clientHeight;
+
+        menuResponsiveIcon.onclick = function () {
+            var isClose = header.clientHeight === headerHeight;
+            if (isClose) {
+                headerResponsive.style.height = 'auto';
+            } else {
+                headerResponsive.style.height = null;
+            }
+        }
+        // tu dong dong khi chon menu
+
+        var menuItemsResponsive = document.querySelectorAll('#header-nav li a[href*="#"]');
+
+        for (var i = 0; i < menuItemsResponsive.length; i++) {
+            var menuItemResponsive = menuItemsResponsive[i];
+            menuItemResponsive.onclick = function (event) {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('header-nav-more-submore');
+                if (isParentMenu) {
+                    event.preventDefault();
+                } else {
+                    headerResponsive.style.height = null;
+                }
+            }
+        }
     </script>
 </body>
 
