@@ -24,7 +24,7 @@ body {
     left: 0;
     right: 0;
     z-index: 9;
-   
+
 }
 
 ul {
@@ -79,7 +79,6 @@ a {
 
 .header-nav-more:hover ul {
     display: block;
-
 }
 
 .header-nav-more-submore>li {
@@ -164,7 +163,7 @@ a {
 }
 
 .content-section1 {
-    max-width: calc(100% - 80px);
+    max-width: calc(100% - 30px);
     width: 800px;
     margin: 0px auto 97px;
 }
@@ -253,7 +252,7 @@ ul.content-section2-ticket {
     width: 800px;
     background-color: #fff;
     margin: 35px auto 20px;
-    max-width: calc(100% - 80px);
+    max-width: calc(100% - 30px);
 }
 
 ul.content-section2-ticket>li {
@@ -295,7 +294,7 @@ ul.content-section2-ticket>li:nth-child(3)>span {
 
 .content-section2-show {
     width: 800px;
-    max-width: calc(100% - 80px);
+    max-width: calc(100% - 30px);
     margin: 0px auto 32px;
 }
 
