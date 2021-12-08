@@ -23,6 +23,7 @@
 
     .header-nav-icon-menu-responsive-700-icon {
         display: inline-block;
+        padding: 0px 2px;
     }
 
     .header-search-responsive {
@@ -47,23 +48,60 @@
         position: initial;
         background-color: #000;
     }
-    .header-nav-more-submore>li{
-        display: block;  
+
+    .header-nav-more-submore>li {
+        display: block;
     }
+
     .header-nav-more-submore>li>a {
-        color: #fff;   
+        color: #fff;
     }
+
     /* content */
-    
-    .content-section1-member>div{
+
+    .content-section1-member>div {
         width: 100%;
         margin-top: 16px;
     }
-    .content-section1-member>div>img{
+
+    .content-section1-member>div>img {
         width: 70%;
     }
-    .content-section2-show>div>div{
+
+    .content-section2-show>div>div {
         width: 100%;
         margin-top: 20px;
+    }
+
+    .content-section3-main-details {
+        text-align: center;
+        width: 100%;
+    }
+    .content-section3-main-details>p{
+        padding: 3px 0px;
+    }
+
+    .content-section3-main-details>p>i {
+        margin-right: 0;
+    }
+
+    .content-section3-main-form {
+        width: 100%;
+    margin-top: 6px;
+    }
+
+    #content-section3-form-email, #content-section3-form-name {
+        width: 100%;
+    }
+    .content-section3-main-form input:last-of-type{
+        margin-top: 12px;
+        width: 100%;
+    }
+    .content-section2-show-sanfrancisco-details-buybtn, .content-section2-show-paris-details-buybtn, .content-section2-show-newyork-details-buybtn{
+        width: 100%;
+    }
+    /* footer */
+    .footer>i{
+        padding: 0px 3px;
     }
 }

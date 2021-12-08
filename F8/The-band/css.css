@@ -532,7 +532,7 @@ ul.content-section2-ticket>li:nth-child(3)>span {
 
 .content-section3-main {
     width: 800px;
-    max-width: calc(100% - 80px);
+    max-width: calc(100% - 30px);
     margin: 32px auto 0px;
     display: block;
 }
@@ -554,7 +554,7 @@ ul.content-section2-ticket>li:nth-child(3)>span {
 }
 
 #content-section3-form-email, #content-section3-form-name {
-    width: calc(100% / 2 - 8px);
+    width: calc(100% / 2 - 4px);
     padding: 10px 8px;
     margin-bottom: 8px;
     border: 1px solid #ccc;
@@ -578,7 +578,10 @@ ul.content-section2-ticket>li:nth-child(3)>span {
     transition: 0.2s ease-out;
     outline: none;
 }
-
+#content-section3-form-message,
+#content-section3-form-email, #content-section3-form-name{
+    border-radius: 4px;
+}
 .content-section3-main-form input:last-of-type {
     padding: 10px 16px;
     background-color: #000;
