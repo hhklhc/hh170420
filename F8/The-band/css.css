@@ -138,6 +138,7 @@ a {
 }
 
 .slider>div>h1, .slider>div>p {
+    text-shadow: 0px 0px 1px #000;
     text-align: center;
     width: 100%;
     color: #fff;
@@ -578,10 +579,12 @@ ul.content-section2-ticket>li:nth-child(3)>span {
     transition: 0.2s ease-out;
     outline: none;
 }
+
 #content-section3-form-message,
-#content-section3-form-email, #content-section3-form-name{
+#content-section3-form-email, #content-section3-form-name {
     border-radius: 4px;
 }
+
 .content-section3-main-form input:last-of-type {
     padding: 10px 16px;
     background-color: #000;
