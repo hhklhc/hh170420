@@ -1,0 +1,12 @@
+* {
+    box-sizing: inherit;
+}
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+html{
+    
+}
