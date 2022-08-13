@@ -46,7 +46,7 @@ html {
 }
 
 .header__navbar-list {
-    display: inline-block;
+    display: flex;
     align-items: center;
     list-style: none;
     padding-left: 0;
@@ -54,7 +54,7 @@ html {
 }
 
 .header__navbar-item {
-    display: inline-block;
+    display: flex;
     align-items: center;
     margin: 0px 8px;
 }
@@ -436,13 +436,15 @@ li.header__navbar-item--separate:hover {
 }
 
 .header-cart-qnt {
-    background-color: var(--white-color);
+    background-color: #fe6433;
     position: absolute;
     top: -10px;
-    right: -4px;
-    padding: 0px 6px;
+    right: -1px;
+    padding: 0px 4px;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
     border-radius: 50%;
-    color: rgb(112, 112, 112);
+    font-weight: 300;
     font-size: 1.2rem;
     box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
 }
@@ -481,4 +483,19 @@ li.header__navbar-item--separate:hover {
     font-size: 1.3rem;
     display: block;
     text-align: center;
+}
+
+.header__navbar-img-user {
+    margin-right: 8px;
+    display: flex;
+    width: 36px;
+    height: 26px;
+    border: 1px solid var(--white-color);
+    border-radius: 2px;
+    object-fit: cover;
+}
+
+.header__navber-user {
+    display: flex;
+    margin-right: 0px;
 }
