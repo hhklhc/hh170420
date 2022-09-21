@@ -198,7 +198,10 @@ a {
 }
 
 .content-section1-member {
+    display: flex;
+    align-items: center;
     margin: 32px 0px;
+    flex-wrap: wrap;
 }
 
 .content-section1-member1, .content-section1-member2, .content-section1-member3 {
