@@ -425,6 +425,28 @@ li.header__navbar-item--separate:hover {
     cursor: pointer;
 }
 
+/* cart icon */
+.header-shopping-cart {
+    display: flex;
+    color: var(--white-color);
+    position: relative;
+    /* line-height: 28px; */
+}
+
+.shopping-noCart {
+    position: absolute;
+    top: 160%;
+    right: 0;
+    box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
+}
+.shopping-noCart p{
+    color: var(--text-color);
+    text-align: center;
+    font-size: 1.3rem;
+}
+.shopping-icon {
+    font-size: 2.6rem;
+}
 
 /* user acc */
 .header__navbar-img-user {
