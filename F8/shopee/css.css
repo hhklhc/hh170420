@@ -20,9 +20,14 @@ html {
     background-image: linear-gradient(0, #fe6433, #f53e2d);
 }
 
-.grid {
+.container {
     width: 1200px;
+    margin: 0 auto;
+}
+
+.grid {
     max-width: 100%;
+    width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -385,6 +390,7 @@ li.header__navbar-item--separate:hover {
 /* search */
 .header__logo-img {
     height: 50px;
+    cursor: pointer;
 }
 
 .header_search {
@@ -427,6 +433,7 @@ li.header__navbar-item--separate:hover {
 
 /* cart icon */
 .header-shopping-cart {
+    cursor: pointer;
     display: flex;
     color: var(--white-color);
     position: relative;
@@ -438,12 +445,30 @@ li.header__navbar-item--separate:hover {
     top: 160%;
     right: 0;
     box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
+    display: none;
 }
-.shopping-noCart p{
+
+.header-shopping-cart:hover .shopping-noCart {
+    display: block;
+    animation: fadeIn 0.2s linear;
+}
+
+.shopping-noCart::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: -22px;
+    border-width: 14px 13px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+}
+
+.shopping-noCart p {
     color: var(--text-color);
     text-align: center;
     font-size: 1.3rem;
 }
+
 .shopping-icon {
     font-size: 2.6rem;
 }
@@ -462,6 +487,16 @@ li.header__navbar-item--separate:hover {
 .header__navber-user {
     display: flex;
     margin-right: 0px;
+}
+
+.header__navber-user::after {
+    background-color: transparent;
+    height: 18px;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 78%;
+    right: 0px;
 }
 
 .header__navbar-acc--info {
