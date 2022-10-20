@@ -1,19 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>-moz-box-flex example</title>
     <style>
-        .thuselector:nth-of-type(1){
-            color: brown;
-        }
+      div.example {
+        display: -moz-box;
+        display: -webkit-box;
+        border: 1px solid black;
+        width: 100%;
+      }
+      div.example > p:nth-child(1) {
+        -moz-box-flex: 1; /* Mozilla */
+        -webkit-box-flex: 1; /* WebKit */
+        border: 1px solid black;
+      }
+      div.example > p:nth-child(2) {
+        -moz-box-flex: 0; /* Mozilla */
+        -webkit-box-flex: 0; /* WebKit */
+        border: 1px solid black;
+      }
     </style>
-</head>
-<body>
-    <div class="thuselector">asfaf</div>
-    <div class="thuselector">afsaf</div>
-    <div class="thuselector">trtegrge</div>
-</body>
+  </head>
+  <body>
+    <div class="example">
+      <p>I will expand to fill extra space</p>
+      <p>I will not expand</p>
+    </div>
+  </body>
 </html>

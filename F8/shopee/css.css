@@ -8,6 +8,10 @@
     --text-color: #333;
 }
 
+body {
+    background-color: #f5f5f5;
+}
+
 html {
     font-size: 62.5%;
     line-height: 1.6rem;
@@ -687,4 +691,60 @@ li.header__navbar-item--separate:hover {
 .items-counts--arrow--right {
     padding: 8px;
     border: 1px solid #f2f2f2;
+}
+
+/* container-products san pham */
+.product {
+    width: calc(100%/5 - 5px);
+    margin-top: 12px;
+    background-color: var(--white-color);
+    cursor: pointer;
+}
+
+.container-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-combosac {
+    padding-top: 100%;
+    background-image: url(../img/shopee/combosac.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.product--des {
+    line-height: 1.8rem;
+    height: 3.6rem;
+    overflow: hidden;
+    /* text-overflow: ellipsis;
+    white-space: nowrap; */
+    font-size: 1.2rem;
+    font-weight: 400;
+    /* margin-top: 20px; */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin-bottom: 0px;
+}
+
+.product--tags {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product--tags p {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 0, 32);
+    color: rgb(255, 0, 32);
+    font-size: 1rem;
+    width: calc(100%/2 - 4px);
+    text-align: center;
+    margin-top: 0px;
 }
