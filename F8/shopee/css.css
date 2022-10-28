@@ -455,6 +455,7 @@ li.header__navbar-item--separate:hover {
     right: 0;
     box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
     display: none;
+    background-color: var(--white-color);
 }
 
 .header-shopping-cart:hover .shopping-noCart {
@@ -746,5 +747,47 @@ li.header__navbar-item--separate:hover {
     font-size: 1rem;
     width: calc(100%/2 - 4px);
     text-align: center;
-    margin-top: 0px;
+    margin-top: 6px;
+}
+
+.product--cost {
+    display: flex;
+}
+
+.product--cost p {
+    color: #ee4d2d;
+    margin: 0px;
+}
+
+.product--cost p:first-child::first-letter,
+.product--cost p:last-child::first-letter {
+    font-size: 1rem;
+}
+
+.product--cost p:nth-child(2) {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.product--rate {
+    display: flex;
+    margin: 10px 0px;
+}
+
+i.product--rate-icons {
+    margin-top: 5px;
+    color: #ffce3d;
+    font-size: 0.8rem;
+}
+
+.product--rate span {
+    color: rgba(0, 0, 0, .87);
+    font-size: 1.4rem;
+    margin-left: 4px;
+}
+
+.product--area p {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, .65);
 }
