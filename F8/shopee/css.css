@@ -598,6 +598,7 @@ li.header__navbar-item--separate:hover {
 .container-merchandise {
     flex: 1;
     margin-top: 10px;
+    margin-left: 18px;
 }
 
 .container-items {
@@ -709,6 +710,7 @@ li.header__navbar-item--separate:hover {
 }
 
 .product-combosac {
+    position: relative;
     padding-top: 100%;
     background-image: url(../img/shopee/combosac.jpg);
     background-repeat: no-repeat;
@@ -717,6 +719,33 @@ li.header__navbar-item--separate:hover {
     background-repeat: no-repeat;
     padding-left: 8px;
     padding-right: 8px;
+}
+
+.tag-like {
+    --color: #f25220;
+    position: absolute;
+    top: 8px;
+    left: -4px;
+    background-color: var(--color);
+    color: var(--white-color);
+    padding: 0px 6px;
+    font-size: 12px;
+    font-weight: 400;
+    box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.tag-like::before {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    display: inline-block;
+    border-width: 4px 0px 0px 4px;
+    content: "";
+    border-style: solid;
+    border-color: var(--color) transparent transparent transparent;
+    filter: brightness(0.5);
 }
 
 .product--des {
@@ -790,4 +819,24 @@ i.product--rate-icons {
     font-weight: 400;
     font-size: 1.4rem;
     color: rgba(0, 0, 0, .65);
+}
+
+.tag-discount {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(254, 214, 56, 0.92);
+    text-align: center;
+    padding: 3px 4px 5px 4px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--white-color);
+}
+
+.tag-discount::first-line {
+    color: #f04d2d;
+}
+.tag-discount::before{
+    content: "";
+    bor
 }
